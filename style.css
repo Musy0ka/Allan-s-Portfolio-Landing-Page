@@ -216,5 +216,6 @@ header .logo{
     }
     .sci li a{
         margin: initial;
+        margin-right: 10px;
     }
 }
