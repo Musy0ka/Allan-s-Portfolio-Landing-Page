@@ -29,11 +29,21 @@ header #toggle{
 header #toggle:before{
     content: '';
     position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+header #toggle:after{
+    content: '';
+    position: absolute;
     top: 7px;
     width: 100%;
     height: 2px;
     background: #fff;
 }
+
 
 header .logo{
     position: relative;
