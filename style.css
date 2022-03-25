@@ -44,6 +44,17 @@ header #toggle:after{
     background: #fff;
 }
 
+.banner.active header #toggle:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.banner.active header #toggle:after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 header .logo{
     position: relative;
@@ -65,4 +76,9 @@ header .logo{
     background-size: cover;
     display: flex;
     align-items: center;
+    transition: 0.5s;
+}
+
+.banner.active{
+    transform: translateX(-400px);
 }
