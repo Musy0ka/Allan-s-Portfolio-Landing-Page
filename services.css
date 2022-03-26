@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body{
@@ -91,4 +92,32 @@ body{
     display: block;
     margin: 0 auto 10px;
     transition: .5s ease;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.box .inner:hover .icon{
+    background: #2196f3;
+}
+
+.box .inner .icon .fa{
+    line-height: 60px;
+    font-size: 35px;
+    transition: all .5s ease;
+}
+
+@media(max-width: 1150px){
+    .item{
+        max-width: 50%;
+        flex: 0 0 50%;
+        -ms-flex:0 0 50%;
+    }
+}
+
+@media(max-width: 800px){
+    .item{
+        max-width: 100%;
+        flex: 0 0 100%;
+        -ms-flex:0 0 100%;
+    }
 }
